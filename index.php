@@ -30,9 +30,6 @@ $students = getAllUsers("data.json");
                 <td><?php echo $student->name ?></td>
                 <td><?php echo $student->age ?></td>
                 <td><?php echo $student->address ?></td>
-                <td><a onclick="return confirm('Ban chac chan muon xoa?')" href="action/delete.php?index=<?php echo $index ?>">Xoa</a>
-                    <a href="view/edit.php?index=<?php echo $index ?>">Update</a>
-                </td>
             </tr>
 
         <?php endforeach; ?>
